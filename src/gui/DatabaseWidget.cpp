@@ -179,6 +179,7 @@ DatabaseWidget::DatabaseWidget(QSharedPointer<Database> db, QWidget* parent)
     m_previewView->hide();
     m_previewSplitter->addWidget(m_entryView);
     m_previewSplitter->addWidget(m_previewView);
+    m_previewView->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Ignored);
     m_previewSplitter->setStretchFactor(0, 100);
     m_previewSplitter->setStretchFactor(1, 0);
     m_previewSplitter->setSizes({1, 1});
